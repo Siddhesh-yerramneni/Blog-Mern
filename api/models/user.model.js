@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema(
         type: String,
         required: true,
     },
+    profilePicture: {
+        type: 'String',
+        default: 'https://play.google.com/store/apps/details?id=com.miniarkano.defaultpfp&hl=en_US',
+    },
     }, {timestamps: true}
 );
 
